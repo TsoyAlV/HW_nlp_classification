@@ -47,8 +47,3 @@ jupyter lab notebooks/tweet_classification.ipynb
 
 Запускайте ячейки по порядку. `random_state=42` зафиксирован во всех этапах.
 
-## Пути улучшения
-
-- Добавить XGBoost/LightGBM (раскомментировать в `requirements.txt` и `config.yaml`)
-- Использовать BERT/RuBERT (заготовка в ноутбуке, этап 2)
-- Сентимент-анализ (VADER/TextBlob) как доп. признак
