@@ -1,0 +1,40 @@
+# Конфигурация проекта классификации твитов (NLP Getting Started)
+# Подхватывается скриптом scripts/config.py -> load_config('configs/default.yaml')
+
+data_dir: data
+trn_file: trn.csv
+tst_file: tst.csv
+sample_submission_file: sample_submission.csv
+submission_file: submission.csv
+
+target_col: target
+id_col: id
+text_col: text
+keyword_col: keyword
+location_col: location
+
+missing_token: nones
+keyword_len_cutoff: 18
+
+test_size: 0.2
+random_state: 42
+stratify_on_target: true
+
+max_features: 5000
+ngram_range: [1, 2]
+max_df: 0.95
+min_df: 2
+
+model_list:
+  - logreg
+  - xgboost
+  # - multinomial_nb
+
+tune_metric: f1
+use_gridsearch: true
+
+bert_model_name: bert-base-uncased
+bert_max_len: 64
+bert_batch_size: 2
+bert_lr: 0.00002
+bert_epochs: 1
