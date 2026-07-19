@@ -1,4 +1,4 @@
-"# HW_nlp_classification
+# Классификация твитов 
 
 Классификация твитов: реальная катастрофа или нет (NLP Getting Started).
 Целевая переменная `target` ∈ {0, 1} — 1 = реальная катастрофа.
@@ -52,4 +52,3 @@ jupyter lab notebooks/tweet_classification.ipynb
 - Добавить XGBoost/LightGBM (раскомментировать в `requirements.txt` и `config.yaml`)
 - Использовать BERT/RuBERT (заготовка в ноутбуке, этап 2)
 - Сентимент-анализ (VADER/TextBlob) как доп. признак
-"
